@@ -1,0 +1,893 @@
+<!-- START TIMER -->
+
+<script>
+  const targetDate = new Date("2023-09-25T14:00:00").getTime();
+
+  function updateCountdown() {
+    const currentDate = new Date().getTime();
+    const timeRemaining = targetDate - currentDate;
+
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+
+    if (timeRemaining > 0) {
+      document.getElementById('timerId').style.display = 'flex';
+    } else {
+      document.getElementById('timerId').style.display = 'none';
+    }
+  }
+
+  setInterval(updateCountdown, 1000);
+
+  updateCountdown();
+
+</script>
+<div class="body" id="timerId" sstyle="">
+  <div class="centered-text">
+    <span style="display: none;" id="days"></span>
+    <span style="display: none;" id="hours"></span>
+    <span id="minutes"> </span> minutes
+    <span id="seconds"></span> seconds
+  </div>
+</div>
+
+<style>
+  .body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+  }
+
+  .centered-text {
+    color: orangered;
+    font-size: 9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+</style>
+
+<!-- END TIMER -->
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ILLFORD - D I G I T A L</title>
+
+  <!-- Favicons -->
+
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
+  <!-- Fonts -->
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Styles -->
+
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+<!--
+  <div class="loader">
+    <div class="loader-brand"><img alt="" class="img-responsive center-block m-5" src="img/brand-white.png"></div>
+  </div>
+-->
+  <div id="layout" class="layout">
+
+    <!-- Header -->
+
+    <header id="top" class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#layout" class="brand js-target-scroll">
+            <img class="brand-img-white" alt="" width="180" src="img/brand-white.png">
+            <img class="brand-img" alt="" width="130" src="img/brand.png">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" class="js-target-scroll">Home</a></li>
+            <li><a href="https://en.illforddigital.com/index.php/services/" class="js-target-scroll">Services</a></li>
+            <!--<li><a href="#" class="js-target-scroll">Case Studies</a></li>-->
+            <!--<li class="nav_gap"><a href="#" class="js-target-scroll">Testimonials</a></li>-->
+            <li><a href="https://en.illforddigital.com/" class="js-target-scroll">About</a></li>
+            <!--<li><a href="#" class="js-target-scroll">Careers</a></li>-->
+            <li><a href="https://en.illforddigital.com/index.php/portfolio-masonry/" class="js-target-scroll">Portfolio</a></li>
+            <li><a href="contact/contact.html" class="js-target-scroll">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home -->
+
+    <main id="home" class="masthead-video masked">
+      <video class="video" autoplay="" loop="" muted="" poster="video/poster.jpg">
+        <source src="video/banner_video.mkv" type="video/mp4">
+        <!--<source src="video/banner_video.mkv" type="video/webm">-->
+      </video>
+      <div class="opener rel-1">
+        <div class="container">
+          <div class="row">
+            <div class="lead col-lg-6">
+              <h1 class="wow fadeInDown">We're crafting digital narratives.</h1>
+              <p class="lead-text">Welcome to our virtual haven, where creativity dances with technology to shape
+                captivating online experiences.</p>
+              <div class="lead-controls">
+                <a href="tel:9847861800" class="btn-lead btn" data-toggle="modal">Get start now</a>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="banner_slider_container">
+            <ul>
+              <li class=" wow fadeInLeft">01 Highlights </li>
+              <li class=" wow fadeInLeft">02 Testimonials</li>
+              <li class=" wow fadeInLeft">03 New Updates</li>
+              <li class=" wow fadeInLeft">04 Campus stories </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Content -->
+
+    <div class="content">
+
+      <!-- Partners  -->
+
+      <section id="partners" class="partners greenline_bg3 bgc-light">
+        <div class="container">
+          <div class="row">
+
+            <div class="ceo_message">
+              <!-- container for the text -->
+              <div class="container wow fadeInLeft">
+                <p>
+                  we are a dynamic and innovative technology company that is committed
+                  to revolutionizing the industry with cutting-edge solutions. Our team
+                  of experts is hard at work developing game-changing products that will
+                  take the market by storm.
+                </p>
+
+                <div class="container1 wow fadeInLeft">- words from the CEO</div>
+              </div>
+              <!-- end of the container -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About  -->
+
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- div for the words -->
+              <div class="words">
+                <!-- div for the each line -->
+                <div class="line1 wow fadeInLeft">GROW YOUR</div>
+                <div class="line2 wow fadeInLeft" style="margin-top: 25px">BUSINESS</div>
+                <div class="line3 wow fadeInLeft" style="margin-top: 25px">ONLINE</div>
+              </div>
+              <!-- div for the words end -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- Features 1 -->
+
+      <section id="features1" class="features  section">
+        <div class="container">
+          <div class="row-columns row-padding  row">
+            <div class="col-xs-12 col-sm-3 col-lg-6  greenline_bg wow fadeInLeft">
+              <img alt="" class="feature-img" src="img/online_profile.png">
+            </div>
+            <div class="col-xs-12 col-sm-9 col-lg-6 greenline_bg1 wow fadeInRight">
+              <h2 class="section-title">First, Make an online profile with our Technical support</h2>
+              <p>As you embark on this digital journey, you choose the pixels that represent you, carefully curating
+                your profile picture. It's the first brushstroke</p>
+              <div class="section-body">
+                <div class="column">
+                  <!-- Options -->
+                  <div class="options">
+                    <!-- the one active option -->
+                    <div class="option active">
+                      <span class="option-text wow fadeInLeft">Branding website</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 24 16" fill="none">
+                          <path
+                            d="M23.1723 8.41072C23.5629 8.0202 23.5629 7.38703 23.1723 6.99651L16.8084 0.632545C16.4178 0.242021 15.7847 0.242021 15.3942 0.632545C15.0036 1.02307 15.0036 1.65623 15.3942 2.04676L21.051 7.70361L15.3942 13.3605C15.0036 13.751 15.0036 14.3842 15.3942 14.7747C15.7847 15.1652 16.4178 15.1652 16.8084 14.7747L23.1723 8.41072ZM0.465225 8.70361H22.4652V6.70361H0.465225V8.70361Z"
+                            fill="black" />
+                        </svg>
+                      </span>
+                    </div>
+                    <!-- the active option ends -->
+
+                    <!-- div for the second option -->
+                    <div class="option" style="margin-top: 20px">
+                      <span class="option-text wow fadeInLeft">Portfolio website</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 24 16" fill="none">
+                          <path
+                            d="M23.1723 8.41072C23.5629 8.0202 23.5629 7.38703 23.1723 6.99651L16.8084 0.632545C16.4178 0.242021 15.7847 0.242021 15.3942 0.632545C15.0036 1.02307 15.0036 1.65623 15.3942 2.04676L21.051 7.70361L15.3942 13.3605C15.0036 13.751 15.0036 14.3842 15.3942 14.7747C15.7847 15.1652 16.4178 15.1652 16.8084 14.7747L23.1723 8.41072ZM0.465225 8.70361H22.4652V6.70361H0.465225V8.70361Z"
+                            fill="black" />
+                        </svg>
+                      </span>
+                    </div>
+                    <!-- second options ends -->
+
+                    <!-- div for the third option -->
+                    <div class="option" style="margin-top: 20px">
+                      <span class="option-text wow fadeInLeft">Online store</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 24 16" fill="none">
+                          <path
+                            d="M23.1723 8.41072C23.5629 8.0202 23.5629 7.38703 23.1723 6.99651L16.8084 0.632545C16.4178 0.242021 15.7847 0.242021 15.3942 0.632545C15.0036 1.02307 15.0036 1.65623 15.3942 2.04676L21.051 7.70361L15.3942 13.3605C15.0036 13.751 15.0036 14.3842 15.3942 14.7747C15.7847 15.1652 16.4178 15.1652 16.8084 14.7747L23.1723 8.41072ZM0.465225 8.70361H22.4652V6.70361H0.465225V8.70361Z"
+                            fill="black" />
+                        </svg>
+                      </span>
+                    </div>
+                    <!-- third options ends -->
+
+                    <!-- div for the fourth option -->
+                    <div class="option" style="margin-top: 20px">
+                      <span class="option-text wow fadeInLeft">Blog Website</span>
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 24 16" fill="none">
+                          <path
+                            d="M23.1723 8.41072C23.5629 8.0202 23.5629 7.38703 23.1723 6.99651L16.8084 0.632545C16.4178 0.242021 15.7847 0.242021 15.3942 0.632545C15.0036 1.02307 15.0036 1.65623 15.3942 2.04676L21.051 7.70361L15.3942 13.3605C15.0036 13.751 15.0036 14.3842 15.3942 14.7747C15.7847 15.1652 16.4178 15.1652 16.8084 14.7747L23.1723 8.41072ZM0.465225 8.70361H22.4652V6.70361H0.465225V8.70361Z"
+                            fill="black" />
+                        </svg>
+                      </span>
+                    </div>
+                    <!-- fourth options ends -->
+                  </div>
+                  <!-- Options end -->
+
+                </div>
+
+                <div class="mt-5">
+                  <!-- the technical support -->
+                  <a class="explore-link  wow fadeInLeft pt-5">EXPLORE ALL TECHNICAL SERVICES</a>
+                  <!-- the technical support ends-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Features 2 -->
+      <!-- book a consultation -->
+      <div class="book_consultation ">
+        <div class="row">
+          <!-- dix for the sentence -->
+          <div class="col-xs-12 col-sm-12 col-lg-6 wow fadeInRight">
+            <div class="container4">
+              <p>We continually set the benchmark for excellence and innovation.</p>
+            </div>
+            <!-- div for sentence ends -->
+
+            <!-- div for book button -->
+            <button href="tel:9847861800">Book a Consultation</button>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-lg-6  wow fadeInLeft greenline_bg1">
+
+            <div class="oval_video">
+              <div class="oval_video_rectangle">
+                <img class="oval_video_play_button_circle" src="img/circle.svg" alt="">
+                <img class="oval_video_play_button_triangle" src="img/play.svg" alt="">
+                <video autoplay loop muted>
+                  <source src="video/-0a52-4da2-8bfa-469fb223eed3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Product -->
+
+      <!--gallery section starts here-->
+
+      <!--the whole gallery is divided into 3 columns-->
+      <div class="gallery_container">
+
+        <!--column 1: contains two sub-row's-->
+        <div class="gallery_container_col1  wow fadeInDown">
+          <div class="gallery_container_col1_r1">
+            <video autoplay loop muted src="video/cl1_r1.mp4"></video>
+          </div>
+          <div class="gallery_container_col1_r2">
+            <video autoplay loop muted src="video/cl1_r2.mp4"></video>
+          </div>
+        </div>
+
+        <!--column 2: contains three sub-row's-->
+        <div class="gallery_container_col2  wow fadeInDown">
+
+          <!--row1: contains three sub-columns's-->
+          <div class="gallery_container_col2_r1">
+            <div class="gallery_container_col2_r1_col1">
+              <img src="img/cl2_r1_cl1.png" alt="">
+            </div>
+            <div class="gallery_container_col2_r1_col2">
+              <img src="img/cl2_r1_cl2.png" alt="">
+            </div>
+            <div class="gallery_container_col2_r1_col3">
+              <img src="img/cl2_r1_cl3.png" alt="">
+            </div>
+
+          </div>
+
+          <!--row2-->
+          <div class="gallery_container_col2_r2  wow fadeInDown">
+            <div class="gallery_container_col2_r2_textContainer">
+              <h4>Digital Branding Services</h4>
+              <h1>Our creativity makes you </h1>
+              <h1>stand out from the crowd</h1>
+              <h6>As you embark on this digital journey, you choose the pixels that represent you,</h6>
+              <h6>carefully curating your profile picture. It's the first brushstroke</h6>
+              <br>
+              <div class="gallery_container_col2_r2_textContainer_cta  wow fadeInDown">
+                <a href="https://en.illforddigital.com/index.php/portfolio-masonry/">LOGO DESIGN</a>
+                <h6>&emsp;&emsp;&emsp;</h6>
+                <a href="https://en.illforddigital.com/index.php/portfolio-masonry/">BRAND IDENTITY</a>
+                <h6>&emsp;&emsp;&emsp;</h6>
+                <a href="https://en.illforddigital.com/index.php/portfolio-masonry/">BRAND STRATEGY</a>
+              </div>
+
+            </div>
+          </div>
+
+          <!--row3: contains three sub-columns's-->
+          <div class="gallery_container_col2_r3  wow fadeInDown">
+            <div class="gallery_container_col2_r3_col1">
+              <img src="img/cl2_r3_cl1.gif" alt="">
+            </div>
+            <div class="gallery_container_col2_r3_col2">
+              <img src="img/cl2_r3_cl2.gif" alt="">
+            </div>
+            <div class="gallery_container_col2_r3_col3">
+              <img src="img/cl2_r3_cl3.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!--column 3: contains three sub-row's-->
+        <div class="gallery_container_col3  wow fadeInDown">
+          <div class="gallery_container_col3_r1">
+            <img src="img/cl3_r1.gif" alt="">
+          </div>
+          <div class="gallery_container_col3_r2">
+            <img src="img/cl3_r2.png" alt="">
+          </div>
+          <div class="gallery_container_col3_r3">
+            <img src="img/cl3_r3.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!--gallery section end here-->
+
+
+
+      <section id="charts" class="charts greenline_bg2 section">
+        <div class="container">
+          <div class="row-columns row-padding row">
+            <div class="col-xs-12 col-sm-6 col-lg-6 wow fadeInRight">
+              <div class="grow_your_audience_right">
+                <img class="grow_your_audience_right_image" src="img/Rectangle 39.png" alt="">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-6 wow fadeInLeft text-center">
+
+
+
+              <!-- grow your audience section -->
+              <div class="grow_your_audience_container  wow fadeInLeft">
+                <div class="grow_your_audience_left">
+                  <div class="grow_your_audience_text_container">
+                    <h4>Marketing services by Ilfford </h4>
+                    <h1>Grow your<br/>audience.</h1>
+                    <div class="grow_your_audience_left_cta">
+                      <a href="tel:9847861800" >Book a Consultation </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- grow your audience section end-->
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Charts -->
+
+
+      <!-- grow your audience section end-->
+
+      
+      <div class="row">
+        <!-- dix for the sentence -->
+        <div class="col-xs-12 col-sm-6 col-lg-6  wow fadeInLeft">
+          <div class="services_socialMedia_left">
+            <img src="img/services_socialMedia.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-6  wow fadeInRight">
+          <div class="services_socialMedia_right">
+            <h2>Social Media Management </h2>
+            <h2> & marketing</h2>
+            <br>
+            <h5>Build stunning social media posters </h5>
+            <h5>writeups, videos and other contents </h5>
+            <h5>for a good-looking social media </h5>
+            <h5>profile.</h5>
+            <div class="services_socialMedia_right_cta">
+              <a href="tel:9847861800">Book a Consultation </a>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+      <!-- grow your audience section end-->
+      <div class="row">
+        <!-- dix for the sentence -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 wow fadeInLeft">
+          <div class="services_SEO_left">
+            <h2>SEO services </h2>
+            <br>
+            <h5>The company offers comprehensive SEO services aimed at enhancing your online visibility and elevating
+              your search engine rankings.</h5>
+            <div class="services_SEO_right_cta">
+              <a href="tel:9847861800">Book a Consultation </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-6 wow fadeInRight">
+          <div class="services_socialMedia_right">
+            <img src="img/plant store.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- grow your audience section end-->
+      <div class="row">
+        <!-- dix for the sentence -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 wow fadeInLeft">
+          <div class="services_socialMedia_left">
+            <img src="img/ppc.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-6 wow fadeInRight">
+          <div class="services_socialMedia_right">
+            <h2>PPC advertising services</h2>
+            <br>
+            <h5>Google Ads, social media advertisements, strategic </h5>
+            <h5>remarketing campaigns, provide a well-rounded digital </h5>
+            <h5>advertising strategy. </h5>
+
+            <div class="services_PPC_right_cta">
+              <a href="tel:9847861800">Book a Consultation </a>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+      <!-- black section -->
+      <div class="black_section">
+        <!-- container for the black portion -->
+        <div class="container_black wow fadeInRight">
+          <h5>
+            “Illford makes it incredibly easy to run my marketing campaign,.........
+            and what's even more impressive is how affordable their
+            services are.”
+          </h5>
+
+          <h6 class=" wow fadeInRight">-Ryan, andreessen horowitz</h6>
+          <!-- div of the logo -->
+          <div class="black_logo wow fadeInRight">
+            <img src="img/black_logo.svg" alt="" />
+          </div>
+          <!-- end of the logo -->
+        </div>
+        <!-- end of the container -->
+      </div>
+      <!-- end of the black section -->
+
+
+      <!--  marquee section -->
+
+      <div href="tel:9847861800" class="flowing_text_container">
+        <div class="marquee">
+          <div class="marquee__item">
+            <span class="marquee-content">
+
+              <a href=""> <span class="marquee-content">
+                  Book an Appointment <span class="marquee__seperator"> <img src="img/Arrow.svg" alt="">
+                  </span></span></a>
+              <a href=""> <span class="marquee-content">
+                  Book an Appointment <span class="marquee__seperator"> <img src="img/Arrow.svg" alt="">
+                  </span></span></a>
+              <a href=""> <span class="marquee-content">
+                  Book an Appointment <span class="marquee__seperator"> <img src="img/Arrow.svg" alt="">
+                  </span></span></a>
+              <a href=""> <span class="marquee-content">
+                  Book an Appointment <span class="marquee__seperator"> <img src="img/Arrow.svg" alt="">
+                  </span></span></a>
+              <a href=""> <span class="marquee-content">
+                  Book an Appointment <span class="marquee__seperator"> <img src="img/Arrow.svg" alt="">
+                  </span></span></a>
+              <a href=""> <span class="marquee-content">
+                  Book an Appointment <span class="marquee__seperator"> <img src="img/Arrow.svg" alt="">
+                  </span></span></a>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- end of the marquee section -->
+
+
+      <!--FAQ STARTS HERE-->
+      <div class="faq_container">
+        <div class="row">
+          <!-- dix for the sentence -->
+          <div class="col-xs-12 col-sm-12 col-lg-6 wow fadeInLeft">
+            <div class="faq_description_container">
+              <h1>WE'VE GOT YOU COVERED, 24/7</h1>
+              <h2>
+                Our commitment to providing exceptional customer support knows no
+                bounds. We take pride in being available at any time, ready to
+                assist you with any inquiries or concerns. Whether it's day or
+                night, our dedicated team is here to ensure you receive the
+                assistance you need promptly and professionally. Your satisfaction
+                is our top priority, and we're here to make your experience with
+                us as smooth and enjoyable as possible.
+              </h2>
+              <a href="tel:9847861800" >BOOK A CONSULTATION</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-lg-6 wow fadeInRight">
+            <div class="faq_questions_container">
+              <div class="accordion">
+                Why should I have a website?
+                <div class="plus_icon">
+                  <img src="img/plus-solid.svg" alt="">
+                </div>
+              </div>
+              <div class="panel">
+                <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                  when the user activates the relevant trigger.</p>
+              </div>
+              <div class="accordion">
+                What does a Illford marketing subscription include?
+                <div class="plus_icon">
+                  <img src="img/plus-solid.svg" alt="">
+                </div>
+              </div>
+              <div class="panel">
+                <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                  when the user activates the relevant trigger.</p>
+              </div>
+              <div class="accordion">
+                Is Illford right for me?
+                <div class="plus_icon">
+                  <img src="img/plus-solid.svg" alt="">
+                </div>
+              </div>
+              <div class="panel">
+                <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                  when the user activates the relevant trigger.</p>
+              </div>
+              <div class="accordion">
+                How do I get a custom domain for my website?
+                <div class="plus_icon">
+                  <img src="img/plus-solid.svg" alt="">
+                </div>
+              </div>
+              <div class="panel">
+                <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                  when the user activates the relevant trigger.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <!--FAQ ENDS HERE-->
+
+
+
+      <!-- grow your audience section end-->
+      <section class="product bgc-light text-center section-sm">
+        <div class="container">
+          <div class="row">
+            <div class="row">
+              <!-- dix for the sentence -->
+              <div class="col-xs-12 col-sm-12 col-lg-6 wow fadeInLeft">
+                <div class="blog_left_container">
+                  <div class="blog_left_container_blogText ">
+                    <h6>BLOG</h6>
+                    <h1>OUR CASE STUDIES</h1>
+                    <h5>At Illford, our values revolve around sustainability, inclusion, diversity, and fulfilling our
+                      social responsibilities.</h5>
+                  </div>
+
+                  <button href="tel:9847861800">Book a Consultation</button>
+
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-lg-6 wow fadeInRight">
+
+                <div class="blog_right_container">
+                  <div class="blog_card1 wow fadeInRight">
+                    <h6>#babystore.in</h6>
+                    <img src="img/babystore.png" alt="">
+                    <h5>Our client, a local baby store specializing in infant and toddler products, faced challenges in
+                      a highly competitive market.</h5>
+                    <div class="blog_arrow">
+                      <img src="img/partners/Arrow.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="blog_card1 wow fadeInRight">
+                    <h6>#babystore.in</h6>
+                    <img src="img/babystore.png" alt="">
+                    <h5>Our client, a local baby store specializing in infant and toddler products, faced challenges in
+                      a highly competitive market.</h5>
+                    <div class="blog_arrow">
+                      <img src="img/partners/Arrow.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog container section -->
+
+
+
+      <!-- Video section -->
+
+      <section id="video-section" class="video-section text-white masked section-lg">
+        <!--careers section start-->
+        <div class="careers_container">
+          <div class="careers_video_container">
+            <video autoplay loop muted src="video/careers_video.mkv"></video>
+          </div>
+          <div class="careers_matter wow fadeInRight">
+            <p>#Careers</p>
+            <h1>We're searching for <br /> exceptional individuals to <br />join our dynamic team,</h1>
+            
+            <button class=" wow fadeInRight">VIEW OPENINGS</button>
+          </div>
+        </div>
+        <!--careers section end-->
+
+
+      </section>
+
+
+
+
+
+
+      <!--contact section start-->
+      <div class="contact_container">
+        <div class="contact_text-container">
+          <div class="contact_centered-heading wow fadeInDown">
+            <h1>GROW YOUR </h1>
+            <h1>BUSINESS WITH US</h1>
+          </div>
+          <div class="contact_centered-para wow fadeInDown">
+            <p> Our tailored strategies, data-driven insights, and creative prowess will empower your
+              brand</p>
+            <p> to reach new horizons. Join hands with us, and together, we'll navigate the exciting journey</p>
+            <p> of expanding your business and achieving unparalleled success."</p>
+          </div>
+          <!--cta buttons-->
+          <div class="contact_buttons mb-5">
+            <a href="" class="contact_wbutton wow fadeInDown">
+              <img src="img/whatsapp_logo.svg" alt="WhatsApp Logo">+91 9847861800</a>
+            <a href="" class="contact_pbutton wow fadeInDown">
+              <img src="img/dialer_logo.svg" alt="phone Logo"> 0484 4861800</a>
+          </div>
+        </div>
+      </div>
+      <!--contact section end-->
+
+
+      <!-- Banner -->
+
+      <section id="banner" class="text-white section-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 wow fadeInDown">
+              <div class="col">
+                <div class="subscribe_text_container">
+                  <h1 class="subscribe_stay_upto_date_with_insightsfrom_Ilford">Discover the story behind our passion and purpose – delve into who we are!</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 wow fadeInDown">
+              <div class="col subscribe_right_tst">
+                  <a href="tel:9847861800">ABOUT US</a>
+                <!--<form class="subscribe_form">
+                  <input class="subscribe_input" type="email" placeholder="Email address" />
+                  <button class="subscribe_button">SUBSCRIBE</button>
+                </form>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner -->
+
+
+
+
+
+
+
+      <section id="banner" class="text-white">
+        <div class="container">
+          <div class="row">
+            <footer>
+              <div class="footer_container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-lg-8">
+                    <a href="" class="footer_logo">
+                      <img href="#" class="brand-img-white" alt="" width="120" src="img/brand.png">
+                    </a>
+                    <a href="" class="footer_copyright">&copy;Illford</a>
+
+                    <a href="contact/contact.html" class="footer_contact">Contact</a>
+                    <a href="" class="footer_privacy_policy">Privacy policy</a>
+                    <a href="" class="footer_terms_and_condition ">Terms & Conditions</a>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="social_button">
+                      <a href="" class="fb_button">
+                        <img src="img/ic_baseline-facebook.svg" alt="WhatsApp Logo" /></a>
+                      <a href="" class="twitter_button">
+                        <img src="img/Rectangle 58.png" alt="WhatsApp Logo" /></a>
+                      <a href="" class="link_button">
+                        <img src="img/uil_linkedin.svg" alt="WhatsApp Logo" /></a>
+                      <a href="" class="utube_button">
+                        <img src="img/mdi_youtube.svg" alt="WhatsApp Logo" /></a>
+                      <a href="" class="cinsta_button">
+                        <img src="img/ri_instagram-fill.svg" alt="WhatsApp Logo" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </footer>
+
+          </div>
+        </div>
+      </section>
+
+
+
+    </div>
+
+
+  </div>
+
+  <!-- Modals -->
+
+
+
+  <!-- Scripts -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.easypiechart.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/interface.js"></script>
+  <script src="js/gmap.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+
+</html>
