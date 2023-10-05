@@ -5152,4 +5152,67 @@ body:not(.modal-open) {
   color: #000;
 }
 
+
+
+
+.services_page_section7{
+  width: auto;
+  background-color: #000;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.services_page_section7_centered{
+  width: 70%;
+  height: auto;
+}
+.services_page_section7_leftCol{
+  width: auto;
+  height: auto;
+  padding-right: 5%;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.services_page_section7_rightCol{
+  width: auto;
+  height: auto;
+  padding-left: 5%;
+  padding-top: 15%;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.services_page_section7_rightCol h2{
+  color: #fff;
+}.services_page_section7_rightCol h5{
+  color: #fff;
+  font-weight: bold;
+}.services_page_section7_rightCol img{
+  width: 100%;
+  object-fit: cover;
+  }
+
+.services_page_section7_leftCol h2{
+  color: #fff;
+}.services_page_section7_leftCol h5{
+  color: #fff;
+  font-weight: bold;
+}
+.services_page_section7_leftCol img{
+width: 100%;
+object-fit: cover;
+}
+.services_page_section7_tag_container{
+  padding-bottom: 6%;
+  padding-top: 3%;
+
+}
+.services_page_section7_tags{
+  background-color: #151515;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
 /* service page end here */
