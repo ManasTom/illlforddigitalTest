@@ -4553,7 +4553,7 @@ body:not(.modal-open) {
 
 .contact_faq_questions_container {
   padding-top: 0%;
-  width: 100%;
+  width: 110%;
   height: auto;
 
 }
@@ -4562,6 +4562,7 @@ body:not(.modal-open) {
   font-family: "IBM Plex Sans", sans-serif;
   color: #000;
   font-weight: bold;
+  font-size: 5rem;
 }
 
 .contact_ctaDiv {
@@ -4630,6 +4631,10 @@ body:not(.modal-open) {
   padding: 4%;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 }
 
 .contact_mapWidget_container h5 {
