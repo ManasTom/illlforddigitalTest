@@ -83,6 +83,18 @@ body {
 }
 
 
+
+
+.navbar_dropdown-content{
+  display: none;
+  position: absolute;
+}
+.navbar_dropdown-content li {
+  display: block;
+}
+.dropdown:hover .navbar_dropdown-content {
+  display: block;
+}
 /* 1.3 Typography */
 
 
@@ -4639,6 +4651,7 @@ body:not(.modal-open) {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .about_subBanner_text {
@@ -4647,20 +4660,21 @@ body:not(.modal-open) {
   padding-top: 10%;
   padding-bottom: 10%;
 }
-
-.about_subBanner_text h1 {
+.about_subBanner_text h1{
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 80px;
   color: #000;
 }
-
-.about_subBanner_text h3 {
+.about_subBanner_text h3{
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 24px;
   color: #000;
   font-weight: lighter;
 }
 
+.about_page_bg-img{
+height: 30%;
+}
 
 .about_page_our_projects_container {
   width: 100%;
@@ -4673,29 +4687,27 @@ body:not(.modal-open) {
 }
 
 .about_page_our_projects_text {
-  width: 70%;
+ width: 70%;
   height: auto;
   justify-items: center;
   text-align: center;
   padding-top: 6%;
   padding-bottom: 6%;
 }
-
-.about_page_our_projects_text h6 {
+.about_page_our_projects_text h6{
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 17px;
   font-weight: 800;
   color: #ffffff;
 }
-
-.about_page_our_projects_text h3 {
+.about_page_our_projects_text h3{
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 51px;
   color: #ffffff;
   font-weight: lighter;
 }
 
-.about_page_counter_container {
+.about_page_counter_container{
   width: auto;
   height: auto;
   display: flex;
@@ -4705,8 +4717,7 @@ body:not(.modal-open) {
   background-image: linear-gradient(to right, #ff4500, #ef6c00);
   padding-bottom: 6%;
 }
-
-.about_page_counter_container_inner {
+.about_page_counter_container_inner{
   width: 60%;
   text-align: center;
   color: #fff;
@@ -4714,31 +4725,1278 @@ body:not(.modal-open) {
   font-weight: bold;
 }
 
-.about_page_Services_heading {
+.about_page_Services_heading{
   width: auto;
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 51px;
   color: #000000;
   font-weight: bolder;
-  padding-top: 4%;
+  padding-top: 10%;
   padding-bottom: 4%;
 }
 
-.about_page_item1_img {
-  width: auto;
+
+
+
+.about_page_serv_web_container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about_page_services_SEO_right_cta {
-  margin-top: 20%;
+.about_page_serv_web{
+  width: 50%;
+  
+}
+
+.about_page_serv_web_left img {
+  width: 80%;
+  /* height: 70%; */
+}
+
+.about_page_serv_web_right h4 {
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans", sans-serif;
+
+}
+
+.about_page_serv_web_right h5 {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000;
+  line-height: 130%;
+  width: 70%;
 }
 
 
 
 
+.about_page_serv_web_right_cta {
+  margin-top: 32%;
+}
 
+.about_page_serv_web_right a {
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about_page_serv_digital_right h5{
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000;
+  line-height: 130%;
+  width: 100%;
+}
+.about_page_serv_digital_right h4{
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans", sans-serif;
+
+}
+.about_page_serv_digital_right_cta {
+  margin-top: 35%;
+}
+
+.about_page_serv_digital_right a {
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about_page_serv_content_container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11%;
+  padding-bottom: 11%;
+}
+
+.about_page_serv_content{
+  width: 50%;
+}
+.about_page_serv_seo_content{
+  width: 60%;
+}
+
+.about_page_serv_content_left h4{
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "IBM Plex Sans", sans-serif;
+  
+}
+
+.about_page_serv_content_left h5 {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000;
+  line-height: 130%;
+  width: 100%;
+}
+
+.about_page_serv_content_left_cta {
+  margin-top: 33%;
+}
+
+.about_page_serv_content_left a {
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about_page_serv_content_right img {
+  width: 80%;
+  /* height: 70%; */
+}
+
+/* .about_page_serv_seo_content{
+  width: 60%;
+} */
+.about_page_serv_seo_left img{
+width: 90%;
+}
+
+.about_page_serv_content__right img{
+width: 100%;
+}
 
 /* about ends */
+
+/* meet our team */
+.about_part_meetourteam_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding-bottom: 3%;
+}
+
+.about_part_meetourteam{
+  width: 73%;
+}
+.about_part_meetourteam h5{
+ 
+color: #000;
+font-size: 17px;
+font-weight: 600;
+}
+
+.about_part_meetourteam h3{
+font-size: 55px;
+font-weight: 600;
+width: 80%;
+}
+.about_part_meetourteam button{
+  padding-bottom: 5%;
+  background-color: #EF6C00;
+  color: #ffffff;
+  width: 290px;
+  height: 70px;
+  border: none;
+font-size: 20px;
+justify-content: center;
+padding: 1.5%;
+margin-top: 2%;
+transition: all 0.3s ease;
+}
+
+
+.about_part_meetourteam button:hover {
+
+  background-color: #fff;
+  color: #EF6C00;
+  border: solid 1px #fff;
+  transition: all 0.3s ease;
+
+}
+
+
+.about_page_meetourteam_team_container{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.about_page_meetourteam_team{
+  height: auto;
+  width: 73%;
+  
+}
+
+.about_page_meetourteam_team_1,
+.about_page_meetourteam_team_2,
+.about_page_meetourteam_team_3,
+.about_page_meetourteam_team_4{
+padding-top: 2%;
+}
+
+
+.about_page_meetourteam_team_1_card {
+  transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 105%;
+    background-color: #F2F2F2;
+   height: auto;
+}
+
+
+.about_page_meetourteam_team_1_card_content {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 3%;
+      
+     
+  }
+
+  .about_page_meetourteam_team_1_card:hover>.about_page_meetourteam_team_1_card_content{
+    padding-left: 0%;
+  }
+   
+
+
+.about_page_meetourteam_team_1_social {
+  padding-left: 10%;
+    width: 21%; 
+    padding-top: 9%;
+    border-color: #000;
+    border: 1%;
+} 
+
+
+
+.about_page_meetourteam_team_1_social .about_page_meetourteam_team_1_social_link {
+    list-style: none;
+    
+}
+
+.about_page_meetourteam_team_1_social .about_page_meetourteam_team_1_social_link .social-link {
+    width: 130%;
+    height: 30px;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e2d6d6;
+    border-radius: 50%;
+    border-color: #000;
+    transition: all 0.2s;
+    
+}
+
+.about_page_meetourteam_team_1_social .about_page_meetourteam_team_1_social_link .social-link:hover {
+    background: #5aa1ec;
+    text-decoration: none;
+    color: #555555;
+}
+
+/* .about_page_meetourteam_team_1_image {
+      
+  justify-content: right;
+  display: inline-block;
+  overflow: hidden;
+  
+ 
+ 
+} */
+
+/* .about_page_meetourteam_team_1_image img{
+transform-origin: bottom right;
+padding-top: 13%;
+width: 100%;
+height: 100% ;
+object-fit: cover;
+transition: transform 0.3s;
+
+}  */
+
+.about_page_meetourteam_team_1_card_header {
+    text-align: left;
+    justify-content: start;
+    padding-top: 3%;
+
+  }
+  .about_page_meetourteam_team_1_card:hover  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    height: 180%;
+    width: 105%;
+    background-color: #F2F2F2; 
+    
+    
+  }
+
+  .about_page_meetourteam_team_1_card:hover > .about_page_meetourteam_team_1_card_header {
+    padding-left: 10%;
+    text-align: left;
+    justify-content: start;
+    
+  }
+
+  .about_page_meetourteam_team_1_card:hover > .about_page_meetourteam_team_1_social {
+    padding-left: 10%;
+    
+    justify-content: center;
+    
+  }
+
+ 
+  
+  .about_page_meetourteam_team_1_card:hover  img{
+    transform: scale(1.03);
+    overflow: hidden;
+  
+    
+  }
+ 
+
+
+.about_page_meetourteam_team_1_card h5 {
+    font-size: 32px;
+   color: #000;
+}
+.about_page_meetourteam_team_1_card h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+
+/* card 2 */
+
+.about_page_meetourteam_team_2{
+  padding-top: 2%;
+  }
+  
+  
+  .about_page_meetourteam_team_2_card {
+    transform-origin: bottom;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 105%;
+      background-color: #F2F2F2;
+     
+  }
+  
+  
+  .about_page_meetourteam_team_2_card_content {
+    
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      height: auto;
+      padding-left: 3%;
+      
+     
+  }
+
+  .about_page_meetourteam_team_2_card:hover>.about_page_meetourteam_team_2_card_content{
+    padding-left: 0%;
+  }
+  
+  .about_page_meetourteam_team_2_social {
+    padding-left: 10%;
+      width: 21%; 
+      padding-top: 9%;
+      border-color: #000;
+      border: 1%;
+  } 
+  
+  .about_page_meetourteam_team_2_social .about_page_meetourteam_team_2_social_link {
+      list-style: none;
+      
+  }
+  
+  .about_page_meetourteam_team_2_social .about_page_meetourteam_team_2_social_link .social-link {
+      width: 130%;
+      height: 30px;
+      border: 1px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      border-radius: 50%;
+      border-color: #000;
+      transition: all 0.3s;
+      
+  }
+  
+  .about_page_meetourteam_team_2_social .about_page_meetourteam_team_2_social_link .social-link:hover {
+      background: #5aa1ec;
+      text-decoration: none;
+      color: #555555;
+  }
+ 
+  .about_page_meetourteam_team_2_card_header {
+      text-align: left;
+      justify-content: start;
+      padding-top: 3%;
+  
+    }
+    .about_page_meetourteam_team_2_card:hover  {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+      height: 180%;
+      width: 105%;
+      background-color: #F2F2F2; 
+      
+      
+    }
+  
+    .about_page_meetourteam_team_2_card:hover > .about_page_meetourteam_team_2_card_header {
+      padding-left: 10%;
+      text-align: left;
+      justify-content: start;
+      
+    }
+  
+   
+    
+    .about_page_meetourteam_team_2_card:hover  img{
+      transform: scale(1.03);
+      overflow: hidden;
+    
+      
+    }
+   
+  
+  
+  .about_page_meetourteam_team_2_card h5 {
+      font-size: 32px;
+     color: #000;
+  }
+  .about_page_meetourteam_team_2_card h6 {
+      font-size: 11px;
+      font-style: italic;
+  }
+
+
+
+
+  .about_page_meetourteam_team_3{
+    padding-top: 2%;
+    }
+    
+    
+    .about_page_meetourteam_team_3_card {
+      transform-origin: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 105%;
+        background-color: #F2F2F2;
+       
+    }
+    
+    
+    .about_page_meetourteam_team_3_card_content {
+      
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 3%;
+      
+     
+  }
+
+  .about_page_meetourteam_team_3_card:hover>.about_page_meetourteam_team_3_card_content{
+    padding-left: 0%;
+  }
+       
+    
+    
+    .about_page_meetourteam_team_3_social {
+      padding-left: 10%;
+        width: 21%; 
+        padding-top: 9%;
+        border-color: #000;
+        border: 1%;
+    } 
+    
+    .about_page_meetourteam_team_3_social .about_page_meetourteam_team_3_social_link {
+        list-style: none;
+        
+    }
+    
+    .about_page_meetourteam_team_3_social .about_page_meetourteam_team_3_social_link .social-link {
+        width: 130%;
+        height: 30px;
+        border: 1px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        border-radius: 50%;
+        border-color: #000;
+        transition: all 0.3s;
+        
+    }
+    
+    .about_page_meetourteam_team_3_social .about_page_meetourteam_team_3_social_link .social-link:hover {
+        background: #5aa1ec;
+        text-decoration: none;
+        color: #555555;
+    }
+   
+    .about_page_meetourteam_team_3_card_header {
+        text-align: left;
+        justify-content: start;
+        padding-top: 3%;
+    
+      }
+      .about_page_meetourteam_team_3_card:hover  {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        height: 180%;
+        width: 105%;
+        background-color: #F2F2F2; 
+        
+        
+      }
+    
+      .about_page_meetourteam_team_3_card:hover > .about_page_meetourteam_team_3_card_header {
+        padding-left: 10%;
+        text-align: left;
+        justify-content: start;
+        
+      }
+    
+     
+      
+      .about_page_meetourteam_team_3_card:hover  img{
+        transform: scale(1.03);
+        overflow: hidden;
+      
+        
+      }
+     
+    
+    
+    .about_page_meetourteam_team_3_card h5 {
+        font-size: 32px;
+       color: #000;
+    }
+    .about_page_meetourteam_team_3_card h6 {
+        font-size: 11px;
+        font-style: italic;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .about_page_meetourteam_team_4{
+    padding-top: 2%;
+    }
+    
+    
+    .about_page_meetourteam_team_4_card {
+      transform-origin: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 105%;
+        background-color: #F2F2F2;
+       
+    }
+    
+    
+    .about_page_meetourteam_team_4_card_content {
+      
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 3%;
+      
+     
+      }
+    
+      .about_page_meetourteam_team_4_card:hover>.about_page_meetourteam_team_4_card_content{
+        padding-left: 0%;
+      }
+       
+    
+    
+    .about_page_meetourteam_team_4_social {
+      padding-left: 10%;
+        width: 21%; 
+        padding-top: 9%;
+        border-color: #000;
+        border: 1%;
+    } 
+    
+    .about_page_meetourteam_team_4_social .about_page_meetourteam_team_4_social_link {
+        list-style: none;
+        
+    }
+    
+    .about_page_meetourteam_team_4_social .about_page_meetourteam_team_4_social_link .social-link {
+        width: 130%;
+        height: 30px;
+        border: 1px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        border-radius: 50%;
+        border-color: #000;
+        transition: all 0.3s;
+        
+    }
+    
+    .about_page_meetourteam_team_4_social .about_page_meetourteam_team_4_social_link .social-link:hover {
+        background: #5aa1ec;
+        text-decoration: none;
+        color: #555555;
+    }
+   
+    .about_page_meetourteam_team_4_card_header {
+        text-align: left;
+        justify-content: start;
+        padding-top: 3%;
+    
+      }
+      .about_page_meetourteam_team_4_card:hover  {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        height: 180%;
+        width: 105%;
+        background-color: #F2F2F2; 
+        
+        
+      }
+    
+      .about_page_meetourteam_team_4_card:hover > .about_page_meetourteam_team_4_card_header {
+        padding-left: 10%;
+        text-align: left;
+        justify-content: start;
+        
+      }
+    
+     
+      
+      .about_page_meetourteam_team_4_card:hover  img{
+        transform: scale(1.03);
+        overflow: hidden;
+      
+        
+      }
+     
+    
+    
+    .about_page_meetourteam_team_4_card h5 {
+        font-size: 32px;
+       color: #000;
+    }
+    .about_page_meetourteam_team_4_card h6 {
+        font-size: 11px;
+        font-style: italic;
+    }
+  
+
+
+
+
+
+
+  .about_page_meetourteam_team_1_card img,
+  .about_page_meetourteam_team_2_card img,
+  .about_page_meetourteam_team_3_card img,
+  .about_page_meetourteam_team_4_card img{
+      width: 100%;
+      max-height: 100%; 
+      object-fit: cover;
+      transition: transform 0.3s;
+      transform-origin: bottom right;
+  padding-top: 13%;
+  }
+
+  .about_page_meetourteam_team_1_card,
+.about_page_meetourteam_team_2_card,
+.about_page_meetourteam_team_3_card,
+.about_page_meetourteam_team_4_card {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about_page_meetourteam_team_11,
+.about_page_meetourteam_team_22,
+.about_page_meetourteam_team_33,
+.about_page_meetourteam_team_44{
+padding-top: 2%;
+}
+
+
+.about_page_meetourteam_team_11_card {
+  transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 105%;
+    background-color: #F2F2F2;
+   
+}
+
+
+.about_page_meetourteam_team_11_card_content {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 3%;
+      
+     
+  }
+
+  .about_page_meetourteam_team_11_card:hover>.about_page_meetourteam_team_11_card_content{
+    padding-left: 0%;
+  }
+   
+
+
+.about_page_meetourteam_team_11_social {
+  padding-left: 10%;
+    width: 21%; 
+    padding-top: 9%;
+    border-color: #000;
+    border: 1%;
+} 
+
+.about_page_meetourteam_team_11_social .about_page_meetourteam_team_11_social_link {
+    list-style: none;
+    
+}
+
+.about_page_meetourteam_team_11_social .about_page_meetourteam_team_11_social_link .social-link {
+    width: 130%;
+    height: 30px;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    border-color: #000;
+    transition: all 0.3s;
+    
+}
+
+.about_page_meetourteam_team_11_social .about_page_meetourteam_team_11_social_link .social-link:hover {
+    background: #5aa1ec;
+    text-decoration: none;
+    color: #555555;
+}
+
+/* .about_page_meetourteam_team_1_image {
+      
+  justify-content: right;
+  display: inline-block;
+  overflow: hidden;
+  
+ 
+ 
+} */
+
+/* .about_page_meetourteam_team_1_image img{
+transform-origin: bottom right;
+padding-top: 13%;
+width: 100%;
+height: 100% ;
+object-fit: cover;
+transition: transform 0.3s;
+
+}  */
+
+.about_page_meetourteam_team_11_card_header {
+    text-align: left;
+    justify-content: start;
+    padding-top: 3%;
+
+  }
+  .about_page_meetourteam_team_11_card:hover  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    height: 180%;
+    width: 105%;
+    background-color: #F2F2F2; 
+    
+    
+  }
+
+  .about_page_meetourteam_team_11_card:hover > .about_page_meetourteam_team_11_card_header {
+    padding-left: 10%;
+    text-align: left;
+    justify-content: start;
+    
+  }
+
+ 
+  
+  .about_page_meetourteam_team_11_card:hover  img{
+    transform: scale(1.03);
+    overflow: hidden;
+  
+    
+  }
+ 
+
+
+.about_page_meetourteam_team_11_card h5 {
+    font-size: 32px;
+   color: #000;
+}
+.about_page_meetourteam_team_11_card h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+
+/* card 2 */
+
+
+.about_page_meetourteam_team_22{
+  padding-top: 2%;
+  }
+  
+  
+  .about_page_meetourteam_team_22_card {
+    transform-origin: bottom;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 105%;
+      background-color: #F2F2F2;
+     
+  }
+  
+  
+  .about_page_meetourteam_team_22_card_content {
+    
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      height: auto;
+      padding-left: 3%;
+      
+     
+    }
+  
+    .about_page_meetourteam_team_22_card:hover>.about_page_meetourteam_team_22_card_content{
+      padding-left: 0%;
+    }
+     
+  
+  
+  .about_page_meetourteam_team_22_social {
+    padding-left: 10%;
+      width: 21%; 
+      padding-top: 9%;
+      border-color: #000;
+      border: 1%;
+  } 
+  
+  .about_page_meetourteam_team_22_social .about_page_meetourteam_team_22_social_link {
+      list-style: none;
+      
+  }
+  
+  .about_page_meetourteam_team_22_social .about_page_meetourteam_team_22_social_link .social-link {
+      width: 130%;
+      height: 30px;
+      border: 1px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      border-radius: 50%;
+      border-color: #000;
+      transition: all 0.3s;
+      
+  }
+  
+  .about_page_meetourteam_team_22_social .about_page_meetourteam_team_22_social_link .social-link:hover {
+      background: #5aa1ec;
+      text-decoration: none;
+      color: #555555;
+  }
+  
+
+  .about_page_meetourteam_team_22_card_header {
+      text-align: left;
+      justify-content: start;
+      padding-top: 3%;
+  
+    }
+    .about_page_meetourteam_team_22_card:hover  {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+      height: 180%;
+      width: 105%;
+      background-color: #F2F2F2; 
+      
+      
+    }
+  
+    .about_page_meetourteam_team_22_card:hover > .about_page_meetourteam_team_22_card_header {
+      padding-left: 10%;
+      text-align: left;
+      justify-content: start;
+      
+    }
+  
+   
+    
+    .about_page_meetourteam_team_22_card:hover  img{
+      transform: scale(1.03);
+      overflow: hidden;
+    
+      
+    }
+   
+  
+  
+  .about_page_meetourteam_team_22_card h5 {
+      font-size: 32px;
+     color: #000;
+  }
+  .about_page_meetourteam_team_22_card h6 {
+      font-size: 11px;
+      font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+  
+
+.about_page_meetourteam_team_33{
+  padding-top: 2%;
+  }
+  
+  
+  .about_page_meetourteam_team_33_card {
+    transform-origin: bottom;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 105%;
+      background-color: #F2F2F2;
+     
+  }
+  
+  
+  .about_page_meetourteam_team_33_card_content {
+    
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      height: auto;
+      padding-left: 3%;
+      
+     
+    }
+  
+    .about_page_meetourteam_team_33_card:hover>.about_page_meetourteam_team_33_card_content{
+      padding-left: 0%;
+    }
+     
+  
+  
+  .about_page_meetourteam_team_33_social {
+    padding-left: 10%;
+      width: 21%; 
+      padding-top: 9%;
+      border-color: #000;
+      border: 1%;
+  } 
+  
+  .about_page_meetourteam_team_33_social .about_page_meetourteam_team_33_social_link {
+      list-style: none;
+      
+  }
+  
+  .about_page_meetourteam_team_33_social .about_page_meetourteam_team_33_social_link .social-link {
+      width: 130%;
+      height: 30px;
+      border: 1px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      border-radius: 50%;
+      border-color: #000;
+      transition: all 0.3s;
+      
+  }
+  
+  .about_page_meetourteam_team_33_social .about_page_meetourteam_team_33_social_link .social-link:hover {
+      background: #5aa1ec;
+      text-decoration: none;
+      color: #555555;
+  }
+  
+
+  .about_page_meetourteam_team_33_card_header {
+      text-align: left;
+      justify-content: start;
+      padding-top: 3%;
+  
+    }
+    .about_page_meetourteam_team_33_card:hover  {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+      height: 180%;
+      width: 105%;
+      background-color: #F2F2F2; 
+      
+      
+    }
+  
+    .about_page_meetourteam_team_33_card:hover > .about_page_meetourteam_team_33_card_header {
+      padding-left: 10%;
+      text-align: left;
+      justify-content: start;
+      
+    }
+  
+   
+    
+    .about_page_meetourteam_team_33_card:hover  img{
+      transform: scale(1.03);
+      overflow: hidden;
+    
+      
+    }
+   
+  
+  
+  .about_page_meetourteam_team_33_card h5 {
+      font-size: 32px;
+     color: #000;
+  }
+  .about_page_meetourteam_team_33_card h6 {
+      font-size: 11px;
+      font-style: italic;
+  }
+
+
+
+
+
+
+
+
+  .about_page_meetourteam_team_44{
+    padding-top: 2%;
+    }
+    
+    
+    .about_page_meetourteam_team_44_card {
+      transform-origin: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 105%;
+        background-color: #F2F2F2;
+       
+    }
+    
+    
+    .about_page_meetourteam_team_44_card_content {
+      
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 3%;
+      
+     
+      }
+    
+      .about_page_meetourteam_team_44_card:hover>.about_page_meetourteam_team_44_card_content{
+        padding-left: 0%;
+      }
+       
+    
+    .about_page_meetourteam_team_44_social {
+      padding-left: 10%;
+        width: 21%; 
+        padding-top: 9%;
+        border-color: #000;
+        border: 1%;
+    } 
+    
+    .about_page_meetourteam_team_44_social .about_page_meetourteam_team_44_social_link {
+        list-style: none;
+        
+    }
+    
+    .about_page_meetourteam_team_44_social .about_page_meetourteam_team_44_social_link .social-link {
+        width: 130%;
+        height: 30px;
+        border: 1px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        border-radius: 50%;
+        border-color: #000;
+        transition: all 0.3s;
+        
+    }
+    
+    .about_page_meetourteam_team_44_social .about_page_meetourteam_team_44_social_link .social-link:hover {
+        background: #5aa1ec;
+        text-decoration: none;
+        color: #555555;
+    }
+   
+    .about_page_meetourteam_team_44_card_header {
+        text-align: left;
+        justify-content: start;
+        padding-top: 3%;
+    
+      }
+      .about_page_meetourteam_team_44_card:hover  {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        height: 180%;
+        width: 105%;
+        background-color: #F2F2F2; 
+        
+        
+      }
+    
+      .about_page_meetourteam_team_44_card:hover > .about_page_meetourteam_team_44_card_header {
+        padding-left: 10%;
+        text-align: left;
+        justify-content: start;
+        
+      }
+    
+     
+      
+      .about_page_meetourteam_team_44_card:hover  img{
+        transform: scale(1.03);
+        overflow: hidden;
+      
+        
+      }
+     
+    
+    
+    .about_page_meetourteam_team_44_card h5 {
+        font-size: 32px;
+       color: #000;
+    }
+    .about_page_meetourteam_team_44_card h6 {
+        font-size: 11px;
+        font-style: italic;
+    }
+  
+
+
+
+
+
+
+  .about_page_meetourteam_team_11_card img,
+  .about_page_meetourteam_team_22_card img,
+  .about_page_meetourteam_team_33_card img,
+  .about_page_meetourteam_team_44_card img{
+      width: 100%;
+      max-height: 100%; 
+      object-fit: cover;
+      transition: transform 0.3s;
+      transform-origin: bottom right;
+  padding-top: 13%;
+  }
+
+  .about_page_meetourteam_team_11_card,
+.about_page_meetourteam_team_22_card,
+.about_page_meetourteam_team_33_card,
+.about_page_meetourteam_team_44_card {
+    overflow: hidden;
+}
+
+
+/* ABOUT PAGE ENDS */
 
 
 
@@ -5216,3 +6474,238 @@ object-fit: cover;
 
 
 /* service page end here */
+
+
+
+
+
+
+
+
+.career_part_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: white;
+
+}
+
+/*.careers_container{
+  width: 200px;
+  height: auto;
+  background-color: white;
+  text-align: center;
+}
+*/
+.career_part_one {
+  height: auto;
+  width: auto;
+}
+.career_part_joining{
+  font-weight: 400px;
+  padding-right: 10px;
+  color: black;
+  padding-bottom: 100px;
+  padding-top: 2%;
+  }
+
+  .career_part_joining h5{
+    font-size: 16px;
+  }
+  .career_part_joining p{
+font-size: 18px;
+line-height: 120%;
+  }
+
+
+.career_part_joining button{
+    background-color: #EF6C00;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border: none;
+  font-size: 18px;
+  padding: 1.5%;
+  transition: all 0.3s ease;
+  }
+  .career_admin{
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+.column_another_inside{
+  font-size: medium;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+}
+
+.career_part_inside {
+  height: auto;
+  width: 80%;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 2%;
+  margin-top: 6%;
+}
+.career_part_side_team{
+  height: auto;
+}
+.team_work{
+  padding: 2%;
+}
+.future_work{
+  padding: 2%;
+}
+.career_part_side_team img{
+  width: 18%;
+  padding: 2px;
+
+}
+.learning_work{
+  padding: 2%;
+}
+.skill_work{
+  padding: 2%;
+}
+.content{
+  font-size: small;
+  margin-top: 1.5%;
+}
+.content_one{
+  font-size: small;
+}
+.content_two{
+  font-size: small;
+}
+.content_three{
+  font-size: small;
+}
+.column_inside{
+  color: black;
+
+}
+.career_full_section {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.full_section_inside{
+  height: auto;
+  width: 80%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 100%;
+  padding-left: 3%;
+}
+.join_us{
+  color: black;
+  padding-bottom: 2%;
+  
+}
+.join_us{
+  font-size: 18px;
+line-height: 90%;
+
+}
+
+.content_career_openings {
+  height: auto;
+  width: auto;
+
+}
+
+.careerPage_container_inner {
+  background-color: #F9F9F9;
+  width: 90%;
+  height: auto;
+}
+
+/*.careerPage_sideMenu h4 {
+  padding: 2%;
+
+}
+*/
+
+.careerPage_vacancy_container {
+  height: auto;
+  background-color: #F9F9F9;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: small;
+  border: 0px solid #ccc;
+  border-radius: 2px;
+  margin: 10px;
+  box-shadow: 5px 10px 18px  rgba(228, 222, 222, 0.156);
+  background-color: #fff;
+  padding-bottom: 0px;
+
+}
+
+.careerPage_vacancy_job_role img {
+  font-family: sans-serif;
+  width: 15%;
+  margin-top: 30%;
+
+}
+
+.careerPage_container {
+  width: 80%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: medium;
+}
+
+/*.careerPage_container_inner {
+  background-color: #F9F9F9;
+  width: 90%;
+  height: auto;
+}
+*/
+
+.careerPage_sideMenu {
+  background-color: #F9F9F9;
+  height: auto;
+  color:black;
+  padding-left: 0%;
+}
+
+.careerPage_sideMenu h4 {
+  padding: 2%;
+}
+
+.careerPage_sideMenu h4:hover {
+  padding: 2%;
+  color: #EF6C00;
+}
+
+.careerPage_careersMenu {
+  background-color: #F9F9F9;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size:small;
+}
+
+.careerPage_vacancy_container {
+  background-color: white;
+
+}
+
+.career_section_part {
+  width: 100%;
+  height: auto;
+  padding-top: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: medium;
+
+}
