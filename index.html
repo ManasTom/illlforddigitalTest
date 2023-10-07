@@ -1,5 +1,29 @@
-<!-- START TIMER -->
+<!DOCTYPE HTML>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ILLFORD - D I G I T A L</title>
+
+  <!-- Favicons -->
+
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
+  <!-- Fonts -->
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Styles -->
+
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+</head>
+<!-- START TIMER -->
+<!-- 
 <script>
   const targetDate = new Date("2023-09-25T14:00:00").getTime();
 
@@ -36,7 +60,7 @@
     <span id="minutes"> </span> minutes
     <span id="seconds"></span> seconds
   </div>
-</div>
+</div> -->
 
 <style>
   .body {
@@ -70,32 +94,6 @@
 
 <!-- END TIMER -->
 
-
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ILLFORD - D I G I T A L</title>
-
-  <!-- Favicons -->
-
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
-  <!-- Fonts -->
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic'
-    rel='stylesheet' type='text/css'>
-
-  <!-- Styles -->
-
-  <link href="css/style.css" rel="stylesheet" media="screen">
-
-</head>
-
 <body>
 
   <!-- Loader -->
@@ -117,31 +115,32 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#layout" class="brand js-target-scroll">
-            <img class="brand-img-white" alt="" width="180" src="img/brand-white.png">
-            <img class="brand-img" alt="" width="130" src="img/brand.png">
+          <a href="../index.html" class="brand js-target-scroll">
+            <img class="brand-img-white" alt="" width="180" src="./img/brand-white.png">
+            <img class="brand-img" alt="" width="130" src="../img/brand.png">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./index.html" class="js-target-scroll">Home</a></li>
-            <li class="dropdown"><a href="" class="js-target-scroll">Services</a>
+            <li class="active"><a href="../index.html" class="js-target-scroll">Home</a></li>
+            <li class="dropdown">
+              <div class="js-target-scroll">Services</div>
               <ul class="navbar_dropdown-content">
-                <li><a href="./services/web_development.html">Web Development</a></li>
-                <li><a href="./services/digital_branding.html">Digital Branding</a></li>
-                <li><a href="./services/ppc_services.html">PPC Services</a></li>
-                <li><a href="./services/seo_services.html">SEO Services</a></li>
-                <li><a href="./services/socialmedia_management.html">Social Media Marketing</a></li>
-                <li><a href="./services/content_development.html">Content Development</a></li>
+                <li><a href="../services/web_development.html">Web Development</a></li>
+                <li><a href="../services/digital_branding.html">Digital Branding</a></li>
+                <li><a href="../services/ppc_services.html">PPC Services</a></li>
+                <li><a href="../services/seo_services.html">SEO Services</a></li>
+                <li><a href="../services/socialmedia_management.html">Social Media Marketing</a></li>
+                <li><a href="../services/content_development.html">Content Development</a></li>
               </ul>
             </li>
             <!--<li><a href="#" class="js-target-scroll">Case Studies</a></li>-->
             <!--<li class="nav_gap"><a href="#" class="js-target-scroll">Testimonials</a></li>-->
-            <li><a href="./about/about.html" class="js-target-scroll">About</a></li>
+            <li><a href="../about/about.html" class="js-target-scroll">About</a></li>
             <!--<li><a href="#" class="js-target-scroll">Careers</a></li>-->
             <li><a href="https://en.illforddigital.com/index.php/portfolio-masonry/"
                 class="js-target-scroll">Portfolio</a></li>
-            <li><a href="contact/contact.html" class="js-target-scroll">Contacts</a></li>
+            <li><a href="../contact/contact.html" class="js-target-scroll">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -760,7 +759,7 @@
             <p>#Careers</p>
             <h1>We're searching for <br /> exceptional individuals to <br />join our dynamic team,</h1>
             <a href="./careers/careers.html">
-              <button class=" wow fadeInRight" > VIEW OPENINGS</button>
+              <button class=" wow fadeInRight"> VIEW OPENINGS</button>
             </a>
           </div>
         </div>
@@ -877,6 +876,8 @@
 
 
     </div>
+    <!-- Return to Top -->
+
 
 
   </div>
@@ -900,6 +901,29 @@
   <script src="js/interface.js"></script>
   <script src="js/gmap.js"></script>
   <script src="js/accordion.js"></script>
+
+
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+  <script>
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+      } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      }
+    });
+    $('#return-to-top').click(function () {      // When arrow is clicked
+      $('body,html').animate({
+        scrollTop: 0                       // Scroll to top of body
+      }, 500);
+    });
+  </script>
 </body>
 
 </html>
