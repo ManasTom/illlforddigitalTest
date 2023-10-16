@@ -6972,3 +6972,84 @@ h3 i {
     padding: 300px 0 230px;
   }
 }
+
+
+
+
+
+
+
+
+  /* admin pannel */
+
+.careers_admin_container{
+  height: auto;
+  width: 100%;
+  background-color: #ef6c00;
+  display: flex;
+  justify-content: center;  
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+.careers_admin_form_holder{
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 1.5%;
+}
+.careers_admin_form_inputs{
+  width: 95%;
+  height: auto;
+}
+.careers_admin_form_inputs input{
+  border-radius: 0.5rem;
+  width: 60%;
+  margin-top: 3rem;
+}
+.careers_admin_form_inputs select{
+  border-radius: 0.5rem;
+  width: 60%;
+  margin-top: 3rem;
+  color: #000;
+}
+.careers_admin_form_buttons{
+  padding-top: 2%;
+  width: 95%;
+  height: auto;
+  
+}
+.careers_admin_form_buttons button{
+  background-color: #ef6c00;
+  color: #ffffff;
+  margin-right: 2%;
+  border-radius: 0.5rem;
+  border-color: #000;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+
+
+
+
+
+/*t&c*/
+.tandc_container{
+  height: auto;
+  width: 100%;
+  background-color: #ef6c00;
+  display: flex;
+  justify-content: center;  
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+.tandc_text_holder{
+  width: 75%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 4%;
+}
