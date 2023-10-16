@@ -795,6 +795,12 @@ a.fa:focus {
   text-align: left;
   justify-content: left
 }
+.banner_slider_container a{
+  width: 100%;
+  height: auto;
+  color: #fff;
+  text-decoration: none;
+}
 
 .banner_slider_container ul {
   padding: 0;
