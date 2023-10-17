@@ -76,24 +76,24 @@
             <div class="careers_admin_container">
                 <div class="careers_admin_form_holder">
                     <div class="careers_admin_form_inputs">
-                        <input id="job_id" type="text" placeholder=" Job id" required>
-                        <select id="department" required>
-                            <option value=""> Choose Department...</option>
-                            <option value=""> HR AND ADMIN</option>
-                            <option value="">ENGINEERING</option>
-                            <option value="">SUPPORT</option>
-                            <option value="">DESIGN</option>
-                            <option value="">DIGITAL MARKETING</option>
-                        </select>
-                        <input id="position" type="text" placeholder=" Vacancy Name" required>
-                        <input id="experience" type="number" placeholder="Experience in Years" required>
-                        <input id="deadline" type="date" placeholder="Deadline" required>
+                            <input id="job_id" type="text" placeholder=" Job id" required>
+                            <select id="job_department" required>
+                                <option value=""> Choose Department...</option>
+                                <option value="HR AND ADMIN"> HR AND ADMIN</option>
+                                <option value="ENGINEERING">ENGINEERING</option>
+                                <option value="SUPPORT">SUPPORT</option>
+                                <option value="DESIGN">DESIGN</option>
+                                <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                            </select>
+                            <input id="job_position" type="text" placeholder=" Vacancy Name" required>
+                            <input id="job_experience" type="number" placeholder="Experience in Years" required>
+                            <input id="job_deadline" type="date" placeholder="Deadline" required>
                     </div>
                     <div class="careers_admin_form_buttons">
-                        <button type="submit" id="add_vacancy"> ADD POSITION </button>
-                        <button id="read_with_id"> READ ID </button>
-                        <button id="update_job"> UPDATE </button>
-                        <button id="delete_job"> DELETE </button>
+                        <button type="submit" id="insert"> ADD POSITION </button>
+                        <button id="read"> READ ID </button>
+                        <button id="update"> UPDATE </button>
+                        <button id="delete"> DELETE </button>
                     </div>
                 </div>
             </div>
@@ -176,6 +176,11 @@
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/interface.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="js/fireConfig.js"></script>
+    <script src="js/admin_pannel_controls.js"></script>
+
+
 
 
     <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
