@@ -1,7 +1,6 @@
 <IfModule mod_rewrite.c> 
     Options +FollowSymLinks -MultiViews
 
-
     RewriteEngine On 
     RewriteBase /
 
@@ -23,4 +22,4 @@
     RewriteRule ^index\.html$ http://illforddigital.com/ [R=301,L]
     RewriteCond %{THE_REQUEST} \.html 
     RewriteRule ^(.*)\.html$ /$1 [R=301,L] 
-    </IfModule> 
+</IfModule> 
