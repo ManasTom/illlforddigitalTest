@@ -7121,3 +7121,57 @@ h3 i {
   color: #707070;
   font-size: 13px;
 }
+
+
+
+
+/*tst*/
+
+.tst_container{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+.tst_container_hold{
+  width: 90%;
+  height: auto;
+  background-color: #ffffff;
+  border-top: solid #ef6c00 1px;
+  border-bottom: solid #ef6c00 1px;
+  border-radius: 10px;
+}
+.tst_container_hold_left{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.tst_container_hold_left select{
+  color: #ffffff;
+  background-color: #ef6c00;
+  padding: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.tst_container_hold_left option{
+  color: #ffffff;
+  background-color: #ef6c00;
+  padding: 1rem;
+  font-weight: bold;
+}
+.tst_container_hold_left button{
+  color: #ffffff;
+  background-color: #ef6c00;
+  padding: 1rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  border: 0;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.vacanciesTable{
+  padding: 1%;
+}

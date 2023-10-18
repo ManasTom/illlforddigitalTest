@@ -13,7 +13,8 @@ function readFom() {
 document.getElementById("insert").onclick = function () {
     readFom();
 
-    firebase
+    if (jobId) {
+        firebase
         .database()
         .ref("vacancies/" + jobId)
         .set({
@@ -23,7 +24,12 @@ document.getElementById("insert").onclick = function () {
             job_experience: Experience,
             job_deadline: deadLine,
         });
-    alert("Data Inserted");
+    alert("New vacancy added");
+    } else {
+        alert("Please enter a Job ID to insert vacancy data.");
+    }
+
+    
     document.getElementById("job_id").value = "";
     document.getElementById("job_department").value = "";
     document.getElementById("job_position").value = "";
@@ -34,7 +40,8 @@ document.getElementById("insert").onclick = function () {
 document.getElementById("read").onclick = function () {
     readFom();
 
-    firebase
+    if (jobId) {
+        firebase
         .database()
         .ref("vacancies/" + jobId)
         .on("value", function (snap) {
@@ -44,12 +51,16 @@ document.getElementById("read").onclick = function () {
             document.getElementById("job_experience").value = snap.val().job_experience;
             document.getElementById("job_deadline").value = snap.val().job_deadline;
         });
+    } else {
+        alert("Please enter a Job ID to read vacancy data.");
+    }
 };
 
 document.getElementById("update").onclick = function () {
     readFom();
 
-    firebase
+    if (jobId) {
+        firebase
         .database()
         .ref("vacancies/" + jobId)
         .update({
@@ -59,7 +70,12 @@ document.getElementById("update").onclick = function () {
             job_experience: Experience,
             job_deadline: deadLine,
         });
-    alert("Data Update");
+    alert("Details Update");
+    } else {
+        alert("Please enter a Job ID to update vacancy data.");
+    }
+
+    
     document.getElementById("job_id").value = "";
     document.getElementById("job_department").value = "";
     document.getElementById("job_position").value = "";
@@ -75,9 +91,9 @@ document.getElementById("delete").onclick = function () {
             .database()
             .ref("vacancies/" + jobId)
             .remove();
-        alert("Data Deleted");
+        alert("vacancy removed");
     } else {
-        alert("Please enter a Job ID to delete data.");
+        alert("Please enter a Job ID to delete vacancy data.");
     }
     document.getElementById("job_id").value = "";
     document.getElementById("job_department").value = "";
