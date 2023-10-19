@@ -7185,13 +7185,12 @@ h3 i {
   align-items: center;
   justify-content: center;
   padding-bottom: 1%;
-  background-color: #cfcece;
 }
 
 .tst_container_hold {
   width: 90%;
   height: auto;
-  background-color: #ba8e8e;
+  background-color: #ffffff;
 
   border-radius: 10px;
 }
