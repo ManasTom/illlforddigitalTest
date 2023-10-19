@@ -1,15 +1,15 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ILLFORD - A D M I N</title>
 
     <!-- Favicons -->
 
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Birthstone|IBM Plex Sans" rel="stylesheet" />
     <!-- Fonts -->
@@ -20,7 +20,38 @@
     <!-- Styles -->
 
     <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="js/fireConfig.js"></script>
+    <style>
+        /* Add your CSS styles for visually appealing display */
+        /* For simplicity, let's assume a basic table display */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: black;
+            font-family: "IBM Plex Sans", sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            text-align: center;
 
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: left;
+            text-align: center;
+
+        }
+
+        th {
+            text-align: center;
+            font-weight: bold;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -64,8 +95,9 @@
                         <li><a href="about.html" class="js-target-scroll">About</a></li>
                         <!--<li><a href="#" class="js-target-scroll">Careers</a></li>-->
                         <li><a href="https://en.illforddigital.com/index.php/portfolio-masonry/"
-                                class="js-target-scroll">Portfolio</a></li>
-                        <li class="active"><a href="contact.html" class="js-target-scroll">Contact Us</a></li>
+                            class="js-target-scroll">Stories</a></li>
+                            <li><a href="careers.html" class="js-target-scroll">Careers</a></li>
+                        <li><a href="contact.html" class="js-target-scroll">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,8 +106,9 @@
 
         <section>
             <div class="careers_admin_container">
-                <div class="careers_admin_form_holder">
-                    <div class="careers_admin_form_inputs">
+                <div class="careers_admin_form_holder row">
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                        <div class="careers_admin_form_inputs">
                             <input id="job_id" type="text" placeholder=" Job id" required>
                             <select id="job_department" required>
                                 <option value=""> Choose Department...</option>
@@ -88,13 +121,26 @@
                             <input id="job_position" type="text" placeholder=" Vacancy Name" required>
                             <input id="job_experience" type="number" placeholder="Experience in Years" required>
                             <input id="job_deadline" type="date" placeholder="Deadline" required>
+                        </div>
+                        <div class="careers_admin_form_buttons">
+                            <button type="submit" id="insert"> ADD POSITION </button>
+                            <button id="read"> READ ID </button>
+                            <button id="update"> UPDATE </button>
+                            <button id="delete"> DELETE </button>
+                        </div>
                     </div>
-                    <div class="careers_admin_form_buttons">
-                        <button type="submit" id="insert"> ADD POSITION </button>
-                        <button id="read"> READ ID </button>
-                        <button id="update"> UPDATE </button>
-                        <button id="delete"> DELETE </button>
+                    <div class="careers_admin_display col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                        <select name="departmentSelect" id="departmentSelect">
+                            <option value="">All Departments</option>
+                            <option value="HR AND ADMIN">HR AND ADMIN</option>
+                            <option value="DESIGN">DESIGN</option>
+                            <option value="SUPPORT">SUPPORT</option>
+                            <option value="ENGINEERING">ENGINEERING</option>
+                            <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                        </select>
+                        <div id="vacanciesTable" class="vacanciesTable"></div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -127,7 +173,8 @@
 
                                     <a href="contact.html" class="footer_contact">Contact</a>
                                     <a href="privacyPolicy.html" class="footer_privacy_policy">Privacy policy</a>
-                                    <a href="terms-and-conditions.html" class="footer_terms_and_condition ">Terms & Conditions</a>
+                                    <a href="terms-and-conditions.html" class="footer_terms_and_condition ">Terms &
+                                        Conditions</a>
                                 </div>
 
                                 <div class="col-xs-12 col-sm-6 col-lg-4">
@@ -176,9 +223,12 @@
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/interface.js"></script>
+    <link href="css/style.css" rel="stylesheet" media="screen">
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
     <script src="js/fireConfig.js"></script>
     <script src="js/admin_pannel_controls.js"></script>
+    <script src="js/career_populator.js"></script>
+
 
 
 

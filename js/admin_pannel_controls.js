@@ -13,7 +13,7 @@ function readFom() {
 document.getElementById("insert").onclick = function () {
     readFom();
 
-    if (jobId) {
+    if (jobId, Dept, vacancyName, Experience, deadLine) {
         firebase
         .database()
         .ref("vacancies/" + jobId)

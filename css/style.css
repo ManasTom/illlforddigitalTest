@@ -795,7 +795,8 @@ a.fa:focus {
   text-align: left;
   justify-content: left
 }
-.banner_slider_container a{
+
+.banner_slider_container a {
   width: 100%;
   height: auto;
   color: #fff;
@@ -5544,6 +5545,8 @@ transition: transform 0.3s;
 .career_part_joining p {
   font-size: 18px;
   line-height: 120%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -5584,10 +5587,15 @@ transition: transform 0.3s;
 .team_work {
   padding: 2%;
 }
+.team_work h3{
+  text-align: left;
+}
 
 .future_work {
   padding: 2%;
 }
+.future_work h3{
+text-align: left;}
 
 .career_part_side_team img {
   width: 18%;
@@ -5598,14 +5606,17 @@ transition: transform 0.3s;
 .learning_work {
   padding: 2%;
 }
+.learning_work h3{
+text-align: left;}
 
 .skill_work {
   padding: 2%;
 }
+.skill_work h3{
+text-align: left;}
 
 .content {
   font-size: small;
-  margin-top: 1.5%;
 }
 
 .content_one {
@@ -6986,18 +6997,19 @@ h3 i {
 
 
 
-  /* admin pannel */
+/* admin pannel */
 
-.careers_admin_container{
+.careers_admin_container {
   height: auto;
   width: 100%;
   background-color: #ef6c00;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   padding-top: 8%;
   padding-bottom: 2%;
 }
-.careers_admin_form_holder{
+
+.careers_admin_form_holder {
   width: 90%;
   height: auto;
   border-radius: 1rem;
@@ -7005,30 +7017,35 @@ h3 i {
   justify-content: center;
   padding: 1.5%;
 }
-.careers_admin_form_inputs{
-  width: 95%;
+
+.careers_admin_form_inputs {
+  width: 90%;
   height: auto;
 }
-.careers_admin_form_inputs input{
+
+.careers_admin_form_inputs input {
   border-radius: 0.5rem;
-  width: 60%;
+  width: 100%;
   margin-top: 3rem;
   padding-bottom: 1%;
 }
-.careers_admin_form_inputs select{
+
+.careers_admin_form_inputs select {
   border-radius: 0.5rem;
-  width: 60%;
+  width: 100%;
   margin-top: 3rem;
   color: #000;
   padding-bottom: 1%;
 }
-.careers_admin_form_buttons{
+
+.careers_admin_form_buttons {
   padding-top: 2%;
   width: 95%;
   height: auto;
-  
+
 }
-.careers_admin_form_buttons button{
+
+.careers_admin_form_buttons button {
   background-color: #ef6c00;
   color: #ffffff;
   margin-right: 2%;
@@ -7044,16 +7061,17 @@ h3 i {
 
 
 /*t&c*/
-.tandc_container{
+.tandc_container {
   height: auto;
   width: 100%;
   background-color: #ef6c00;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   padding-top: 8%;
   padding-bottom: 2%;
 }
-.tandc_text_holder{
+
+.tandc_text_holder {
   width: 75%;
   height: auto;
   border-radius: 1rem;
@@ -7079,8 +7097,8 @@ h3 i {
   height: 100px;
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   z-index: 1000;
 }
 
@@ -7095,7 +7113,7 @@ h3 i {
   color: #fff;
   width: 60px;
   height: 60px;
-  font-size:30px;
+  font-size: 30px;
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 3px #999;
@@ -7127,7 +7145,7 @@ h3 i {
 
 /*tst*/
 
-.tst_container{
+.tst_container {
   width: 100%;
   height: auto;
   background-color: #ffffff;
@@ -7136,33 +7154,38 @@ h3 i {
   justify-content: center;
   padding-bottom: 1%;
 }
-.tst_container_hold{
+
+.tst_container_hold {
   width: 90%;
   height: auto;
   background-color: #ffffff;
-  border-top: solid #ef6c00 1px;
-  border-bottom: solid #ef6c00 1px;
+
   border-radius: 10px;
 }
-.tst_container_hold_left{
-  text-align: center;
+
+.tst_container_hold_left {
+  padding-left: 2rem;
+  text-align: left;
   align-items: center;
   justify-content: center;
 }
-.tst_container_hold_left select{
+
+.tst_container_hold_left select {
   color: #ffffff;
   background-color: #ef6c00;
   padding: 1rem;
   font-weight: bold;
   margin-top: 1rem;
 }
-.tst_container_hold_left option{
+
+.tst_container_hold_left option {
   color: #ffffff;
   background-color: #ef6c00;
   padding: 1rem;
   font-weight: bold;
 }
-.tst_container_hold_left button{
+
+.tst_container_hold_left button {
   color: #ffffff;
   background-color: #ef6c00;
   padding: 1rem;
@@ -7172,6 +7195,15 @@ h3 i {
   border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
-.vacanciesTable{
+
+.vacanciesTable {
   padding: 1%;
+}
+
+.careers_admin_display select {
+  color: #ffffff;
+  background-color: #ef6c00;
+  padding: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }

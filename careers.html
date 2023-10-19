@@ -92,8 +92,9 @@
                         <li><a href="about/about.html" class="js-target-scroll">About</a></li>
                         <!--<li><a href="#" class="js-target-scroll">Careers</a></li>-->
                         <li><a href="https://en.illforddigital.com/index.php/portfolio-masonry/"
-                                class="js-target-scroll">Portfolio</a></li>
-                        <li><a href="contact/contact.html" class="js-target-scroll">Contacts</a></li>
+                            class="js-target-scroll">Stories</a></li>
+                            <li class="active"><a href="careers.html" class="js-target-scroll">Careers</a></li>
+                        <li><a href="contact.html" class="js-target-scroll">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +124,8 @@
                             all starts with the free lunch!
                         </p>
                         <br>
-                        <button>VIEW OPENING</button>
+                        <a href="#departmentSelectDiv"><button>VIEW OPENINGS</button></a>
+
                     </div>
                     <div class="career_part_side_team col-xs-12 col col-sm-12 col md-6 col-lg-6 col-xl-6">
                         <div class="row">
@@ -180,12 +182,12 @@
 
     </div>
     <!--test-->
-    <div class="tst_container">
+    <div class="tst_container" id="departmentSelectDiv">
         <div class="tst_container_hold">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <div class="tst_container_hold_left">
-                        <h2>Our open Positions</h2>
+                        <h2>OUR OPEN POSITIONS</h2>
                         <select name="departmentSelect" id="departmentSelect">
                             <option value="">All Departments</option>
                             <option value="HR AND ADMIN">HR AND ADMIN</option>
@@ -351,6 +353,14 @@
             }, 500);
         });
     </script>
+    <div class="floating_btn">
+        <a target="_blank" href="https://wa.me/+919847861800">
+            <div class="contact_icon">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+    </div>
 </body>
 
 </html>
