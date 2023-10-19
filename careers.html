@@ -23,6 +23,13 @@
     <style>
         /* Add your CSS styles for visually appealing display */
         /* For simplicity, let's assume a basic table display */
+        .tablediv {
+            width: 100%;
+
+            overflow-y: scroll;
+
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -89,7 +96,7 @@
                         </li>
                         <!--<li><a href="#" class="js-target-scroll">Case Studies</a></li>-->
                         <!--<li class="nav_gap"><a href="#" class="js-target-scroll">Testimonials</a></li>-->
-                        <li><a href="about/about.html" class="js-target-scroll">About</a></li>
+                        <li><a href="about.html" class="js-target-scroll">About</a></li>
                         <!--<li><a href="#" class="js-target-scroll">Careers</a></li>-->
                         <li><a href="https://en.illforddigital.com/index.php/portfolio-masonry/"
                                 class="js-target-scroll">Stories</a></li>
@@ -197,11 +204,13 @@
                             <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
                         </select>
                         <br>
+                        <!--
                         <button>APPLY NOW</button>
+                        -->
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 tablediv">
                     <div id="vacanciesTable" class="vacanciesTable"></div>
                 </div>
             </div>
