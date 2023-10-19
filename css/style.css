@@ -57,6 +57,38 @@ body {
 /* 1.2 Loader */
 
 
+.marquee__item a {
+  color: #FFF;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scrolling 10s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+  /*   flex: 0 0 20vw; */
+  /*   margin: 0 2vw; */
+}
+
+.marquee-item img {
+  display: block;
+  width: 100%;
+  /*   padding: 0 20px; */
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translatex(-144vw);
+  }
+}
+
 
 .loader {
   position: fixed;
@@ -1937,7 +1969,7 @@ a.fa:focus {
 
 .social_button img {
   padding: 0px 10px 0px;
-  float: right;
+  float: left;
 }
 
 .blog_container {
@@ -3358,7 +3390,6 @@ body:not(.modal-open) {
   padding: 2%;
   color: #fff;
 }
-
 
 /*FAQ CSS STARTS HERE*/
 
@@ -7090,6 +7121,7 @@ h3 i {
 
 
 .floating_btn {
+  margin-bottom: 4%;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -7146,19 +7178,20 @@ h3 i {
 /*tst*/
 
 .tst_container {
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 1%;
+  background-color: #cfcece;
 }
 
 .tst_container_hold {
   width: 90%;
   height: auto;
-  background-color: #ffffff;
+  background-color: #ba8e8e;
 
   border-radius: 10px;
 }

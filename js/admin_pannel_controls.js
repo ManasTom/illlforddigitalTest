@@ -59,7 +59,7 @@ document.getElementById("read").onclick = function () {
 document.getElementById("update").onclick = function () {
     readFom();
 
-    if (jobId) {
+    if (jobId, Dept, vacancyName, Experience, deadLine) {
         firebase
         .database()
         .ref("vacancies/" + jobId)
@@ -70,9 +70,9 @@ document.getElementById("update").onclick = function () {
             job_experience: Experience,
             job_deadline: deadLine,
         });
-    alert("Details Update");
+    alert("Details Updated");
     } else {
-        alert("Please enter a Job ID to update vacancy data.");
+        alert("Please enter a full details to update vacancy data.");
     }
 
     
