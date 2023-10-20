@@ -7239,3 +7239,73 @@ h3 i {
   font-weight: bold;
   margin-top: 1rem;
 }
+
+
+
+/*admin login*/
+.login_container {
+  height: auto;
+  width: 100%;
+  background-color: #ef6c00;
+  display: flex;
+  justify-content: center;
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+
+.login_text_holder {
+  width: 75%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin_login_box{
+  background-color: #ffffff;
+  width: 30%;
+  height: auto;
+  border: solid black 2px;
+  border-radius: 1rem;
+  padding: 1%;
+  text-align: center;
+}
+.admin_login_box input {
+  padding: 1%;
+  margin: 3%;
+  border-radius: 1rem;
+
+}
+.admin_login_box h4 {
+  padding: 1%;
+  margin: 3%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.admin_login_box button {
+  padding: 2%;
+  margin: 3%;
+  border-radius: 0.5rem;
+  background-color: #ef6c00;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .admin_login_box{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    border: solid black 2px;
+    border-radius: 1rem;
+    padding: 1%;
+    text-align: center;
+  }
+
+}
