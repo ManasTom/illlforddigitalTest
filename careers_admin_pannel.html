@@ -51,10 +51,9 @@
             font-weight: bold;
 
         }
-    </style>
-</head>
-
+    </style></head>
 <body>
+
 
 
     <div id="layout" class="layout">
@@ -98,6 +97,7 @@
                                 class="js-target-scroll">Stories</a></li>
                         <li><a href="careers.html" class="js-target-scroll">Careers</a></li>
                         <li><a href="contact.html" class="js-target-scroll">Contact Us</a></li>
+                        <button class="admin_logout_btn" type="submit" id="signoutbtn">Log out</button>
                     </ul>
                 </div>
             </div>
@@ -206,54 +206,88 @@
 
     </div>
 
-    <!-- Modals -->
 
 
 
-    <!-- Scripts -->
+     <!-- Scripts -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.easypiechart.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/interface.js"></script>
-    <link href="css/style.css" rel="stylesheet" media="screen">
-    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
-    <script src="js/fireConfig.js"></script>
-    <script src="js/admin_pannel_controls.js"></script>
-    <script src="js/career_populator.js"></script>
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/jquery.easypiechart.min.js"></script>
+     <script src="js/jquery.ajaxchimp.min.js"></script>
+     <script src="js/interface.js"></script>
+     <link href="css/style.css" rel="stylesheet" media="screen">
+     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+     <script src="js/fireConfig.js"></script>
+     <script src="js/admin_pannel_controls.js"></script>
+     <script src="js/career_populator.js"></script>
+     <script src="js/xx.js"></script>
+ 
+ 
+ 
+ 
+ 
+     <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+ 
+     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 
 
 
 
-    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 
-    <script>
-        // ===== Scroll to Top ==== 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-                $('#return-to-top').fadeIn(200);    // Fade in the arrow
-            } else {
-                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-            }
-        });
-        $('#return-to-top').click(function () {      // When arrow is clicked
-            $('body,html').animate({
-                scrollTop: 0                       // Scroll to top of body
-            }, 500);
-        });
-    </script>
+
+
+
+
+
+
+<!--
+    <h1>Welcome Admin!</h1>
+    <form id="mainForm">
+        <button class="btn btn-outline-success" type="submit" id="signoutbtn">Log Out</button>
+    </form>
+-->
+    
 </body>
+<script>
+    // Function to log out the user
+    const logoutUser = () => {
+        const confirmation = confirm("Are you sure you want to log out?");
+        if (confirmation) {
+            // Clear user credentials and information from session storage
+            sessionStorage.removeItem("user-cred");
+            sessionStorage.removeItem("user-info");
 
+            // Redirect to the sign-in page
+            window.location.href = "careers.html";
+        }
+    };
+
+   // Function to check if the user is logged in
+const checkUserCred = () => {
+    firebase.auth().onAuthStateChanged((user) => {
+        if (!user) {
+            // If the user is not logged in, redirect to the sign-in page
+            window.location.href = "careers.html";
+        }
+    });
+};
+
+
+    // Add an event listener to the Log Out button
+    const signoutBtn = document.getElementById("signoutbtn");
+    signoutBtn.addEventListener("click", logoutUser);
+
+    // Check if the user is logged in when the page loads
+    window.addEventListener("load", checkUserCred);
+</script>
 </html>
