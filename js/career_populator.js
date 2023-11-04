@@ -44,7 +44,7 @@
 
      // Create table header
      const headerRow = table.insertRow();
-     const headers = [ 'Position', 'Department', 'Experience in years', 'Application Deadline'];
+     const headers = ['Job ID', 'Position', 'Department', 'Experience in years', 'Application Deadline'];
      headers.forEach(headerText => {
          const th = document.createElement('th');
          th.appendChild(document.createTextNode(headerText));
@@ -56,7 +56,7 @@
          if (data.hasOwnProperty(jobId)) {
              const job = data[jobId];
              const row = table.insertRow();
-             const values = [ job.job_position, job.job_department, job.job_experience, job.job_deadline];
+             const values = [job.job_id, job.job_position, job.job_department, job.job_experience, job.job_deadline];
              values.forEach(value => {
                  const cell = row.insertCell();
                  cell.appendChild(document.createTextNode(value));

@@ -2248,7 +2248,7 @@ a.fa:focus {
   padding: 10px;
   color: #adadad;
   min-width: 222px;
-  background-color: #00000026;
+  background-color: #0000006a;
 }
 
 .navbar-nav li li a .fa {
@@ -2257,6 +2257,7 @@ a.fa:focus {
 
 .navbar-nav li:hover {
   z-index: 1;
+  font-weight: bold;
 }
 
 .navbar-nav li:hover>ul {
@@ -5618,15 +5619,18 @@ transition: transform 0.3s;
 .team_work {
   padding: 2%;
 }
-.team_work h3{
+
+.team_work h3 {
   text-align: left;
 }
 
 .future_work {
   padding: 2%;
 }
-.future_work h3{
-text-align: left;}
+
+.future_work h3 {
+  text-align: left;
+}
 
 .career_part_side_team img {
   width: 18%;
@@ -5637,14 +5641,18 @@ text-align: left;}
 .learning_work {
   padding: 2%;
 }
-.learning_work h3{
-text-align: left;}
+
+.learning_work h3 {
+  text-align: left;
+}
 
 .skill_work {
   padding: 2%;
 }
-.skill_work h3{
-text-align: left;}
+
+.skill_work h3 {
+  text-align: left;
+}
 
 .content {
   font-size: small;
@@ -5856,6 +5864,147 @@ h3 i {
 .contact_mapWidget_container_text {
   width: 100%;
 }
+
+
+@media (max-width: 1200px) {
+
+
+
+  .footer_logo {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+
+    float: left;
+    margin: auto;
+    text-align: center;
+
+  }
+
+  .footer_copyright {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: bold;
+    width: 100%;
+    text-align: center;
+
+    float: left;
+    padding: 10px;
+
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 0%;
+  }
+
+  .footer_contact {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+
+    float: left;
+    padding: 10px;
+
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 0%;
+  }
+
+  .footer_privacy_policy {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+
+    float: left;
+    padding: 10px;
+
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 0%;
+
+  }
+
+  .footer_terms_and_condition {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    padding: 10px;
+
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+    float: left;
+
+  }
+
+
+  .subscribe_text_container {
+    justify-content: left;
+    align-items: center;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe_stay_upto_date_with_insightsfrom_Ilford {
+    text-align: center;
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 30px;
+    padding: 1%;
+
+  }
+
+  .social_button {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+
+
+  .social_button img {
+    padding: 10px;
+    float: none;
+    margin: auto;
+  }
+
+  .subscribe_right {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    margin-top: 0%;
+  }
+
+
+}
+
+
 
 @media (max-width: 767px) {
   body {
@@ -6070,138 +6219,6 @@ h3 i {
 
   .section-body {
     margin-top: 0px;
-  }
-
-
-  .footer_logo {
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 15px;
-    width: 100%;
-    padding: 10px;
-
-    float: left;
-    margin: auto;
-    text-align: center;
-
-  }
-
-  .footer_copyright {
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 15px;
-    font-style: bold;
-    width: 100%;
-    text-align: center;
-
-    float: left;
-    padding: 10px;
-
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-    margin-left: 0%;
-  }
-
-  .footer_contact {
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 15px;
-    font-style: normal;
-    width: 100%;
-    text-align: center;
-
-    float: left;
-    padding: 10px;
-
-    font-weight: 300;
-    line-height: normal;
-    text-decoration: none;
-    margin-left: 0%;
-  }
-
-  .footer_privacy_policy {
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    width: 100%;
-    text-align: center;
-
-    float: left;
-    padding: 10px;
-
-    line-height: normal;
-    text-decoration: none;
-    margin-left: 0%;
-
-  }
-
-  .footer_terms_and_condition {
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    padding: 10px;
-
-    line-height: normal;
-    text-decoration: none;
-    margin-left: 0%;
-    text-align: center;
-    width: 100%;
-    float: left;
-
-  }
-
-
-  .subscribe_text_container {
-    justify-content: left;
-    align-items: center;
-    padding: 5%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .subscribe_stay_upto_date_with_insightsfrom_Ilford {
-    text-align: center;
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 30px;
-    padding: 1%;
-
-  }
-
-  .social_button {
-    color: #000;
-    font-family: IBM Plex Sans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration: none;
-    margin-left: 0%;
-    text-align: center;
-    width: 100%;
-    float: left;
-  }
-
-
-  .social_button img {
-    padding: 10px;
-    float: none;
-    margin: auto;
-  }
-
-  .subscribe_right {
-
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-align: center;
-    padding: 3%;
-    margin-top: 0%;
   }
 
 
@@ -7264,7 +7281,8 @@ h3 i {
   align-items: center;
   justify-content: center;
 }
-.admin_login_box{
+
+.admin_login_box {
   background-color: #ffffff;
   width: 30%;
   height: auto;
@@ -7273,12 +7291,14 @@ h3 i {
   padding: 1%;
   text-align: center;
 }
+
 .admin_login_box input {
   padding: 3%;
   margin: 3%;
   border-radius: 1rem;
 
 }
+
 .admin_login_box h3 {
   padding: 1%;
   margin: 3%;
@@ -7298,7 +7318,7 @@ h3 i {
 }
 
 @media (max-width: 767px) {
-  .admin_login_box{
+  .admin_login_box {
     background-color: #ffffff;
     width: 100%;
     height: auto;
@@ -7310,7 +7330,7 @@ h3 i {
 
 }
 
-.admin_logout_btn{
+.admin_logout_btn {
   background-color: #fff;
   color: #ef6c00;
   font-weight: bold;
