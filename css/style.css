@@ -7112,7 +7112,7 @@ h3 i {
 .tandc_container {
   height: auto;
   width: 100%;
-  background-color: #ef6c00;
+  background-color: #37474F;
   display: flex;
   justify-content: center;
   padding-top: 8%;
@@ -7138,7 +7138,7 @@ h3 i {
 
 
 .floating_btn {
-  margin-bottom: 4%;
+  margin-bottom: 7%;
   position: fixed;
   bottom: 30px;
   right: 30px;
